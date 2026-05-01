@@ -17,7 +17,6 @@
       #h(1fr)
       #date],
     numbering: "1",
-    margin: 10mm,
   )
 
   set text(

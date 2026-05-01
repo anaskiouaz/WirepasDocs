@@ -55,7 +55,9 @@ Le projet consiste à concevoir et développer une application interne permettan
 == Cibles et utilisateurs finaux
 
 L'équipe Commerciale Wirepas : Utilisateurs principaux du service pour préparer leur salons.
+
 Le Product Owner (Eden. S.) : Validation des critères de scoring et des fonctionnalités.
+
 Référent technique HubSpot (Riikka Palola) : Supervision de l'intégration des données dans le CRM.
 
 = Périmètre et Spécifications Fonctionnelles
@@ -180,7 +182,7 @@ Le système sera découpé en pipelines de traitement de données (scraping -> e
 
 == Sécurité et RGPD
 
-===1. Sécurité applicative :
+=== Sécurité applicative :
 
 *Gestion des secrets* : variables d'environnement via fichier `.env` (jamais commité), chargées au démarrage. Rotation trimestrielle des clés API. Scan automatique du dépôt avec `gitleaks` en pre-commit hook (cf. SEC-01).
 *Communications* : HTTPS obligatoire pour tous les appels sortants, vérification des certificats TLS activée.
